@@ -19,12 +19,14 @@ read packet
 # Execute users input
 if [[ "$cmd -eq $cmd" ]]
   then
-  ping -c $packet $cmd > ping_log.txt
+  echo "What would you like to name your log? "
+  read name
+  ping -c $packet $cmd > $name.txt
   echo "Ping Complete! Press any key to view the log! "
   read key
   if [[ "$key -eq $key" ]]
     then
-	cat ping_log.txt
+	cat $name.txt
   fi
 fi
 
