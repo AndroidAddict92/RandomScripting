@@ -19,7 +19,6 @@ read name
 # Run Command to pull source
 if [[ "$page -eq $page" ]]
   then
-  # curl $page > $name.html
   curl $page > $name.txt
   
   # Prompt for text search
